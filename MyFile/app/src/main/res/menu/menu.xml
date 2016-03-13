@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/sort"
+        android:title="排序"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:id="@+id/sort_group"
+                android:checkableBehavior="single">
+                <item android:id="@+id/sort_char"
+                    android:title="字符排序" />
+                <item android:id="@+id/sort_file"
+                    android:title="文件排序" />
+                <item android:id="@+id/sort_sizeMax"
+                    android:title="从大到小" />
+                <item android:id="@+id/sort_sizeMin"
+                    android:title="从小到大" />
+                <item android:id="@+id/sort_time"
+                    android:title="修改时间" />
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/layout"
+        android:title="布局"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:id="@+id/layout_group">
+                <item android:id="@+id/layout_L"
+                    android:title="线性布局"/>
+                <item android:id="@+id/layout_G"
+                    android:title="网格布局"/>
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/select"
+        android:title="搜索"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/set"
+        android:title="设置"
+        app:showAsAction="ifRoom"></item>
+</menu>
